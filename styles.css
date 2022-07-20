@@ -1,13 +1,29 @@
-body {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+
+:root{
+	--padding: 25px;
+	--centerText : center;
 }
-h1{
-    text-align: center;
+body {
+	padding: var(--padding);
+	
+}
+.title{
+	text-align: var(--centerText);
+}
+.lastUpdate{
+	text-align: var(--centerText);
 }
 
+
+
+
 .profilePicture{
+	margin-top: -30px;
+}
+
+#imgtest{
+	width: 220px;
+	height: 300px;
 	clip-path: circle();
 }
 
