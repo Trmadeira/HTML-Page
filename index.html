@@ -5,19 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiago Madeira | Profile</title>
-    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="logoTM.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
 
     * {box-sizing: border-box;}
+    :root{
+        --box-height: 400px;
+    }
 
     body { 
         font-family: Arial, Helvetica, sans-serif;
+        background-color: bisque;
     }
 
     .header {
         overflow: hidden;
-        background-color: #cec5ba;
+        background-color: rgb(255, 195, 121);
         padding: 20px 20px;
         margin: 0%;
     }
@@ -44,7 +48,7 @@
     }
 
     .header a.active {
-        background-color: dodgerblue;
+        background-color: rgb(1, 9, 18);
         color: white;
     }
 
@@ -57,26 +61,82 @@
 	    cursor: pointer;
     }
 
-
-
     .pictureAndInfo{
 	    display: inline;
         padding: 20px;
     }
 
-
-    .profilePicture{
-        margin-left: 150px;
+    .profile-picture{
+        display: inline;
+        margin-left: 300px;
         clip-path: circle();
         
     }
-    .buttons{
-        
-    }
+   .middle-box{
+        display: flex;
+        margin-top: 40px;
+        justify-content: center;
+        align-items:center;
+        background-color: bisque;
+   }
 
     .info{
-	    text-align: center;
+        text-align:left;
+	    margin-left: 60px; 
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 40px;
     }
+
+    .first-sentence{
+        font-size: 30px;
+    }
+
+    .my-degree{
+        font-size: 30px;
+    }
+
+    .three-boxes div{
+        margin-top: 50px;
+    }
+    .three-boxes img{
+        width: 700px;
+        height: 398px;
+        filter: brightness(50%);
+    }
+    #leftbox {
+        float:left;
+        width:33%;
+        height:var(--box-height);
+    }
+
+    #middlebox{
+        float:left; 
+        width:34%;
+        height:var(--box-height);
+    }
+
+    #rightbox{
+        float:right;
+        width:33%;
+        height:var(--box-height);
+    }
+
+    .image{
+        max-width: 100%;
+        display: block;
+    }
+
+
+    #footer{
+        display: block;
+        width: 100%;
+        height: 400px;
+        margin-top: 445px;
+        background-color: rgb(255, 195, 121);
+    }
+
+
+   
 
     
     </style>
@@ -86,36 +146,49 @@
 
 <body>
     <div class="header">
-        <a class="logo">< TIAGO MADEIRA ></a>
+        <a class="logo">< TM ></a>
         <div class="header-right">
           <a class="nav-effect" href="#contact" >ABOUT ME!</a>
           <a class="nav-effect" href="#about" >CONTACT</a>
         </div>
     </div>
+
+
     <div class ="pictureAndInfo">
-        <div>
-            <img class = "profilePicture"  src="miniPhoto.jpeg"  alt="_tiagomadeira_"/>
+        <div class="middle-box">
+            <div class="info">
+                <span class="first-sentence">Olá, eu sou</span>
+                <br>
+                <span class="my-name">Tiago Rodrigues Madeira</span>
+                <br>
+                <span class="my-degree">Code Cadet 👨🏻‍💻</span>
+                <br>
+                <a class="btn btn-warning" href="https://github.com/Trmadeira?tab=repositories" target="_blank" role="button">GitHub</a>
+                <a class="btn btn-warning" href="https://www.linkedin.com/in/tiago-madeira-719850225/" target="_blank" >Linkedin</a>
+                <a class="btn btn-warning" href="https://www.instagram.com/_tiagomadeira_/" target="_blank" >Instagram</a>
+            </div>
+            <img width="300x" class = "profile-picture"  src="FinalPhoto.png"  alt="_tiagomadeira_"/>
         </div>
-        <div class="info">
-            <p>Tiago Madeira</p> 
-            <p>Code Cadet</p>
-            <p>+351 91...</p>
-            <p>trmadeira@me.com</p>
+    </div>
+
+
+    <div class="three-boxes">
+       <div id="leftbox">
+            <img class="image apex" src="computing.jpeg" alt="Apex Legends">
+       </div>
+       <div id="middlebox">
+            <img class="image games" src="playingVG.jpeg" alt="Video Games">
+       </div>
+       <div id="rightbox">
+            <img class="image tennis" src="Tennis.jpeg" alt="Tennis">
+       </div>
+    </div>
+
+    <div class="last-box">
+        <div id="footer">
+ 
         </div>
-    </div>
-    
-    <div class="buttons">
-        <a class="btn btn-dark" href="https://github.com/Trmadeira?tab=repositories" target="_blank" role="button">GitHub</a>
-        <a class="btn btn-dark" href="https://twitter.com/TiagoMadeira14" target="_blank" >Twitter</a>
-        <a class="btn btn-dark" href="https://www.instagram.com/_tiagomadeira_/" target="_blank" >Instagram</a>
-    </div>
-    <div>
-        <p>
-            ABOUT ME!
-            <br>
-            I'm Tiago Madeira!
-        </p>
-    </div>
+     </div>
 
 </body>
 </html>
