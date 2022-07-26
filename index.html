@@ -11,7 +11,7 @@
 
     * {box-sizing: border-box;}
     :root{
-        --box-height: 400px;
+        --box-height: 500px;
     }
 
     body { 
@@ -43,12 +43,12 @@
 
 
     .header a:hover {
-        background-color: rgb(204, 192, 172);
-        color: rgb(0, 0, 0);
+        background-color: rgb(238, 178, 76);
+        color: rgb(255, 255, 255);
     }
 
     .header a.active {
-        background-color: rgb(1, 9, 18);
+        background-color: rgb(180, 195, 213);
         color: white;
     }
 
@@ -97,43 +97,58 @@
 
     .three-boxes div{
         margin-top: 50px;
+        display: block;
     }
-    .three-boxes img{
-        width: 700px;
-        height: 398px;
-        filter: brightness(50%);
-    }
+
     #leftbox {
         float:left;
         width:33%;
         height:var(--box-height);
+        background-image: url(computing.jpeg);
+        filter: brightness(50%);
+
     }
 
     #middlebox{
         float:left; 
         width:34%;
         height:var(--box-height);
+        background-image: url(playingVG.jpeg);
+        filter: brightness(50%);
     }
 
     #rightbox{
         float:right;
         width:33%;
         height:var(--box-height);
+        background-image: url(Tennis.jpeg);
+        
     }
 
-    .image{
-        max-width: 100%;
-        display: block;
+    .title{
+        margin-top: 700px;
+        font-size: 50px;
     }
+
+    .text{
+        color: white;
+        text-align: center;
+    }
+
+   
+
+
+
 
 
     #footer{
         display: block;
         width: 100%;
         height: 400px;
-        margin-top: 445px;
+        margin-top: 550px;
         background-color: rgb(255, 195, 121);
     }
+
 
 
    
@@ -174,13 +189,31 @@
 
     <div class="three-boxes">
        <div id="leftbox">
-            <img class="image apex" src="computing.jpeg" alt="Apex Legends">
+            <div class="text">
+                <br>
+                <br>
+                <span class="title">TITLE</span>
+                <br>
+                <span class="text-here">Text Here</span>
+            </div>
        </div>
        <div id="middlebox">
-            <img class="image games" src="playingVG.jpeg" alt="Video Games">
+            <div class="text">
+                <br>
+                <br>
+                <span class="title">TITLE</span>
+                <br>
+                <span class="text-here">Text Here</span>
+            </div>
        </div>
        <div id="rightbox">
-            <img class="image tennis" src="Tennis.jpeg" alt="Tennis">
+            <div class="text">
+                <br>
+                <br>
+                <span class="title">TITLE</span>
+                <br>
+                <span class="text-here">Text Here</span>
+            </div>
        </div>
     </div>
 
